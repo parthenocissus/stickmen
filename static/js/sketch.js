@@ -1,9 +1,10 @@
 // let lines = [];
+let startOfPictos = 400;
+let endOfPictos = 499;
+
 let showPoints = true;
 let scaleFactor = 10;
 let viewSize;
-let startOfPictos = 208;
-let endOfPictos = 299;
 let nOfPictos;
 let pictograms;
 let pictoCounter = 0;
