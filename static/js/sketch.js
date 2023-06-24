@@ -2,7 +2,7 @@
 let showPoints = true;
 let scaleFactor = 10;
 let viewSize;
-let startOfPictos = 200;
+let startOfPictos = 208;
 let endOfPictos = 299;
 let nOfPictos;
 let pictograms;
