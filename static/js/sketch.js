@@ -1,5 +1,5 @@
 // let lines = [];
-let startOfPictos = 500;
+let startOfPictos = 550;
 let endOfPictos = 599;
 
 let showPoints = true;
@@ -69,10 +69,11 @@ let perlinLines = (lines) => {
     let perlines = [];
     let aOff = 0;
     let lOff = 100;
-    lines.forEach(l => {
+    lines.forEach((l, i) => {
         perline = [];
         let baseA = random(0, TWO_PI);
-        let baseL = random(-15, 15);
+        let jitterSize = (i !== 0) ? 17 : 7;
+        let baseL = random(-jitterSize, jitterSize);
         l.forEach(p => {
             let aL = map(noise(aOff), 0, 1, 0, baseA);
             let dL = map(noise(lOff), 0, 1, 0, baseL);
@@ -81,7 +82,7 @@ let perlinLines = (lines) => {
                 y: p.y + (sin(aL) * baseL)
             }
             perline.push(createVector(pDot.x, pDot.y));
-            aOff += 0.5;
+            aOff += 0.7;
             lOff += 0.1;
         });
         perlines.push(JSON.parse(JSON.stringify(perline)));
