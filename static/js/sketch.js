@@ -1,6 +1,6 @@
 // let lines = [];
-let startOfPictos = 800;
-let endOfPictos = 899;
+let startOfPictos = 900;
+let endOfPictos = 1001;
 
 let showPoints = true;
 let scaleFactor = 10;
@@ -67,8 +67,8 @@ let drawLines = (lines, clr = 0) => {
 
 let perlinLines = (lines) => {
     let perlines = [];
-    let aOff = 0;
-    let lOff = 100;
+    let aOff = random(0, 100);
+    let lOff = random(100, 200);
     lines.forEach((l, i) => {
         perline = [];
         let baseA = random(0, TWO_PI);
