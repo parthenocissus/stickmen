@@ -1,6 +1,6 @@
 // let lines = [];
-let startOfPictos = 550;
-let endOfPictos = 599;
+let startOfPictos = 700;
+let endOfPictos = 799;
 
 let showPoints = true;
 let scaleFactor = 10;
