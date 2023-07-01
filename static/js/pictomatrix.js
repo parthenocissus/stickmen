@@ -1,5 +1,5 @@
-const startOfPictos = 301;
-const endOfPictos = 400;
+const startOfPictos = 1301;
+const endOfPictos = 1400;
 
 let nOfPictos;
 let showPoints = false;
