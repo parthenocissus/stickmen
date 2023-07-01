@@ -1,5 +1,5 @@
-const startOfPictos = 101;
-const endOfPictos = 200;
+const startOfPictos = 301;
+const endOfPictos = 400;
 
 let nOfPictos;
 let showPoints = false;
@@ -10,10 +10,12 @@ let drawings;
 let pictograms;
 
 const unit = { x: 17, y: 35 };
-const strokeData = { base: 1, bold: 4 };
-const margins = { x: 30, y: 30 };
+// const unit = { x: 17, y: 27 };
+const strokeData = { base: 2, bold: 4 };
+const margins = { x: 50, y: 50 };
 
 const localhost = "http://127.0.0.1:5000/static/media/drawings/";
+// const localhost = "http://127.0.0.1:5000/static/media/drawings-b/";
 
 function preload() {
     nOfPictos = endOfPictos - startOfPictos + 1;
@@ -21,6 +23,7 @@ function preload() {
 
     for (let i = startOfPictos; i <= endOfPictos; i++) {
         loadJSON(localhost + i + ".json", (data) => {
+        // loadJSON(localhost + "b" + i + ".json", (data) => {
             let lines = [];
             let points = data.points;
             let currentLine = [];
@@ -92,7 +95,6 @@ function draw() {
         for (let j = 0; j < height - 2 * margins.y; j += unit.y  * pictoScaleFactor) {
             let pictogram = drawings[counter++];
             let shift = {x: i + margins.x, y: j + margins.y};
-            console.log(i + ", " + j);
             drawLines(pictogram, shift);
         }
     }
