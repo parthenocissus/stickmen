@@ -77,7 +77,7 @@ let drawPoint = (x, y) => {
 function setup() {
     drawings = shuffle(pictograms);
     viewSize = {x: unit.x * scaleFactor + 2 * margins.x, y: unit.y * scaleFactor + 2 * margins.y};
-    createCanvas(viewSize.x, viewSize.y);
+    createCanvas(viewSize.x, viewSize.y, SVG);
 }
 
 function draw() {
@@ -102,6 +102,6 @@ function draw() {
 
 function keyPressed() {
     if (key === "s") {
-        save("test.png");
+        save("pictomatrix.svg");
     }
 }

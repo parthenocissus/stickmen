@@ -1,6 +1,6 @@
 // let lines = [];
-let startOfPictos = 1201;
-let endOfPictos = 1500;
+let startOfPictos = 1701;
+let endOfPictos = 1900;
 
 let showPoints = true;
 let scaleFactor = 10;
@@ -72,8 +72,18 @@ let perlinLines = (lines) => {
     lines.forEach((l, i) => {
         perline = [];
         let baseA = random(0, TWO_PI);
-        let jitterSize = (i !== 0) ? 17 : 7;
-        let baseL = random(-jitterSize, jitterSize);
+        let baseL;
+        // let jitterSize = (i !== 0) ? 17 : 7;
+        // let baseL = random(-jitterSize, jitterSize);
+        if (i === 0) {
+            baseL = random(-7, 7);
+        } else {
+            if (random() > .5) {
+                baseL = random(-17, -7);
+            } else {
+                baseL = random(7, 17);
+            }
+        }
         l.forEach(p => {
             let aL = map(noise(aOff), 0, 1, 0, baseA);
             let dL = map(noise(lOff), 0, 1, 0, baseL);
