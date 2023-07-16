@@ -19,5 +19,20 @@ def pictomatrix():
     return render_template("pictomatrix.html")
 
 
+@app.route('/pictomatrix-wide/')
+def pictomatrix_wide():
+    return render_template("pictomatrix_wide.html")
+
+
+@app.route('/pictomatrix-nn/')
+def pictomatrix_nn():
+    return render_template("pictomatrix_nn.html")
+
+
+@app.route('/mitchell/')
+def mitchell():
+    return render_template("mitchell.html")
+
+
 if __name__ == "__main__":
     app.run(host='127.0.0.1', debug=True)
