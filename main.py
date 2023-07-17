@@ -8,6 +8,9 @@ import utils
 
 app = Flask(__name__)
 
+@app.route('/')
+def homepage():
+    return render_template("index.html")
 
 @app.route('/variation-maker/')
 def variation_maker():
