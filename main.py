@@ -1,12 +1,15 @@
 # Uros Krcadinac 2023
 # Main App
 
-import sys
-import json
-from flask import Flask, render_template, send_file, redirect, request
-import utils
+from flask import Flask, render_template
 
 app = Flask(__name__)
+
+
+@app.route('/')
+@app.route('/drawing-panel/')
+def drawing_panel():
+    return render_template("drawing_panel.html")
 
 
 @app.route('/variation-maker/')
