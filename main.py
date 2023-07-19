@@ -10,6 +10,9 @@ app = Flask(__name__)
 def homepage():
     return render_template("index.html")
 
+@app.route('/morphing/')
+def morphing():
+    return render_template("morphing.html")
 
 @app.route('/drawing-panel/')
 def drawing_panel():
