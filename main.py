@@ -5,9 +5,11 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def homepage():
     return render_template("index.html")
+
 
 @app.route('/drawing-panel/')
 def drawing_panel():
@@ -34,9 +36,9 @@ def pictomatrix_nn():
     return render_template("pictomatrix_nn.html")
 
 
-@app.route('/mitchell/')
-def mitchell():
-    return render_template("mitchell.html")
+@app.route('/nearest-neighbor/')
+def nearest_neighbor():
+    return render_template("nearest_neighbor.html")
 
 
 if __name__ == "__main__":
