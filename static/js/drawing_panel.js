@@ -4,7 +4,7 @@ let rdpLines = [];
 let showPoints = true;
 let drawingStopped = false;
 let currentIndex = 0;
-let fileCounter = 2301;
+let fileCounter = 2709;
 
 const stickSize = { "w": 17, "h": 35 };
 const scaleFactor = 10;
