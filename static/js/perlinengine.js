@@ -13,6 +13,7 @@ let currentIndex = 0;
 let startIndex = 0;
 let versionCounter = 1;
 
+
 const localhost = "http://127.0.0.1:5000/static/media/drawings/";
 
 function preload() {
