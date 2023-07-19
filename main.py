@@ -9,7 +9,6 @@ app = Flask(__name__)
 def homepage():
     return render_template("index.html")
 
-@app.route('/')
 @app.route('/drawing-panel/')
 def drawing_panel():
     return render_template("drawing_panel.html")
