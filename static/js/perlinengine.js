@@ -1,6 +1,6 @@
 // let lines = [];
-let startOfPictos = 1901;
-let endOfPictos = 2000;
+let startOfPictos = 3400;
+let endOfPictos = 4100; 
 
 let showPoints = true;
 let scaleFactor = 10;
@@ -171,10 +171,16 @@ function keyPressed() {
         currentPicto = perlinLines(firstPicto);
     } else if (key === "f") {
         currentPicto = firstPicto;
-    } else if (keyCode === RIGHT_ARROW) {
+    } else if (keyCode === RIGHT_ARROW || keyCode === 68) {
         versionCounter = 1;
         pictoCounter++;
         currentIndex++;
+        currentPicto = pictograms[currentIndex];
+        firstPicto = pictograms[currentIndex];
+    } else if (keyCode === LEFT_ARROW || keyCode === 65) {
+        versionCounter = 1;
+        pictoCounter--;
+        currentIndex--;
         currentPicto = pictograms[currentIndex];
         firstPicto = pictograms[currentIndex];
     }
