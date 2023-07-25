@@ -2,10 +2,9 @@ from pyaxidraw import axidraw
 import time
 from svgpathtools import svg2paths, svg2paths2
 
-
 svg_name = "arrows_002"
 # svg_file = f"static/media/final_svgs/{svg_name}_random_order_.svg"
-svg_file = "static/media/final_svgs/arrows_002_random_order_.svg"
+svg_file = "static/media/final_svgs/arrowtest2.svg"
 
 
 def draw_svg(ax, svg_file, delay=2):
@@ -55,4 +54,4 @@ if not ax.connect():
     quit()
 
 # Draw the SVG file with a delay of 1 second between groups
-draw_svg(ax, svg_file, delay=2)
+draw_svg(ax, svg_file, delay=1)
