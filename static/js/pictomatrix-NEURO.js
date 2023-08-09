@@ -9,14 +9,13 @@ let size;
 let drawings;
 let pictograms;
 
-const unit = { x: 45, y: 60 };
+const unit = { x: 35, y: 50 };
 // const unit = { x: 17, y: 27 };
-const strokeData = { base: 2, bold: 4 };
-const margins = { x: 50, y: 50 };
-const spacing = 40;
+const strokeData = { base: 2, bold: 2 };
+const margins = { x: 50, y: 20 };
+const spacing = 2;
 
-const localhost = "http://127.0.0.1:5000/static/media/rnntest/";
-// const localhost = "http://127.0.0.1:5000/static/media/drawings-b/";
+const localhost = "http://127.0.0.1:5000/static/media/rnntestOut/";
 
 function preload() {
     nOfPictos = endOfPictos - startOfPictos + 1;
@@ -60,5 +59,8 @@ function draw() {
 function keyPressed() {
     if (key === "s") {
         save("pictomatrix.svg");
+    }
+    if (key === "r") {
+        location.reload();
     }
 }
