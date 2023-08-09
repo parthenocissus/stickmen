@@ -10,6 +10,10 @@ app = Flask(__name__)
 def homepage():
     return render_template("index.html")
 
+@app.route('/pictomatrix-NEURO/')
+def pictomatrix_NEURO():
+    return render_template("pictomatrix-NEURO.html")
+
 @app.route('/webgen/')
 def picking():
     return render_template("webgen.html")
