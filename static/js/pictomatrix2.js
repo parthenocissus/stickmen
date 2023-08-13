@@ -1,5 +1,7 @@
-const startOfPictos = 1667;
-const endOfPictos = 2000;
+// limit: 1600
+
+const startOfPictos = 1; // 1667;
+const endOfPictos = 1000;
 
 let nOfPictos;
 let showPoints = false;
@@ -9,8 +11,8 @@ let drawings;
 let pictograms;
 
 const unit = { x: 17, y: 35 };
-const gap = 6;
-const dim = { w: 33, h: 10 };
+const gap = 12;
+const dim = { w: 40, h: 25 };
 const strokeData = { base: 1, bold: 4 };
 const margins = { x: 50, y: 50 };
 // const pictoMargins = { x: 5, y: 5};
