@@ -1,7 +1,7 @@
 // limit: 1600
-
-const startOfPictos = 4001; // 1667;
-const endOfPictos = 4100;
+// 5440
+const startOfPictos = 5001; // 1667;
+const endOfPictos = 5440;
 
 let nOfPictos;
 let showPoints = false;
@@ -17,7 +17,7 @@ const strokeData = { base: 1, bold: 4 };
 const margins = { x: 50, y: 50 };
 // const pictoMargins = { x: 5, y: 5};
 
-const localhost = "http://127.0.0.1:5000/static/media/drawingsShuffled/";
+const localhost = "http://127.0.0.1:5000/static/media/Infographic/5440_5/";
 // const localhost = "http://127.0.0.1:5000/static/media/drawings/";
 
 function preload() {
