@@ -1,7 +1,7 @@
 // limit: 1600
 
-const startOfPictos = 1; // 1667;
-const endOfPictos = 1000;
+const startOfPictos = 4001; // 1667;
+const endOfPictos = 4100;
 
 let nOfPictos;
 let showPoints = false;
@@ -12,13 +12,13 @@ let pictograms;
 
 const unit = { x: 17, y: 35 };
 const gap = 12;
-const dim = { w: 40, h: 25 };
+const dim = { w: 40, h: 100 };
 const strokeData = { base: 1, bold: 4 };
 const margins = { x: 50, y: 50 };
 // const pictoMargins = { x: 5, y: 5};
 
-const localhost = "http://127.0.0.1:5000/static/media/drawings/";
-// const localhost = "http://127.0.0.1:5000/static/media/drawings-b/";
+const localhost = "http://127.0.0.1:5000/static/media/drawingsShuffled/";
+// const localhost = "http://127.0.0.1:5000/static/media/drawings/";
 
 function preload() {
     unit.x = unit.x + gap;
@@ -86,7 +86,7 @@ function setup() {
         y: (unit.y * pictoScaleFactor * dim.h) + (2 * margins.y)
     };
     // createCanvas(viewSize.x, viewSize.y, SVG);
-    createCanvas(viewSize.x, viewSize.y);
+    createCanvas(viewSize.x, viewSize.y, SVG);
 }
 
 function draw() {
@@ -113,7 +113,7 @@ function draw() {
 
 function keyPressed() {
     if (key === "s") {
-        // save("pictomatrix.svg");
-        save("pictomatrix.png");
+        save("pictomatrix.svg");
+        // save("pictomatrix.png");
     }
 }
