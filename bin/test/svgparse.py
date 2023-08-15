@@ -1,1 +1,0 @@
-# ideja je da se iz ovog fajla importuje funckija koja ce kroz xml i string manipulation da izvuce pathove i grupe 
