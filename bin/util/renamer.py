@@ -1,11 +1,11 @@
 import glob, os, random
 
 names = []
-dir = "static/media/DRAFTS_FOR_PLOT/izabrani_piktogrami/rest/"
+dir = "static/media/DRAFTS_FOR_PLOT/izabrani_piktogrami/"
 g = glob.glob(dir + "*")
 
 for i, _ in enumerate(g):
-    names.append(str(i + 17).zfill(3))
+    names.append(str(i + 1).zfill(3))
 
 random.shuffle(names)
 
