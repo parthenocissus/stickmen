@@ -26,7 +26,6 @@ def morphing():
 def drawing_panel():
     return render_template("drawing_panel.html")
 
-
 @app.route('/variation-maker/')
 def variation_maker():
     return render_template("variation-maker.html")
@@ -50,6 +49,10 @@ def pictomatrix_nn():
 @app.route('/nearest-neighbor/')
 def nearest_neighbor():
     return render_template("nearest_neighbor.html")
+
+@app.route('/flow-field/')
+def flow_field():
+    return render_template("flow_field.html")
 
 
 if __name__ == "__main__":

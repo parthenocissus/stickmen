@@ -1,9 +1,12 @@
 import xml.etree.ElementTree as ET
 import random
 
-svg_name = "arrows_002"
-input_svg = f"static/media/final_svgs/{svg_name}.svg"
-output_svg = f"static/media/final_svgs/{svg_name}_random_order.svg"
+# svg_name = "arrows_002"
+# input_svg = f"static/media/final_svgs/{svg_name}.svg"
+# output_svg = f"static/media/final_svgs/{svg_name}_random_order.svg"
+
+input_svg = f"static/media/Exhibition/svgs/centaur_a3_001.svg"
+output_svg = f"static/media/Exhibition/svgs/centaur_a3_001_.svg"
 
 
 def randomize_svg(svg_file, output_file):

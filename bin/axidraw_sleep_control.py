@@ -2,7 +2,7 @@ from pyaxidraw import axidraw
 from svgpathtools import svg2paths
 import time
 
-svg_file = "../static/media/final_svgs/arrowtest2.svg"
+svg_file = "../static/media/Databases/tests/final_svgs/arrowtest2.svg"
 
 points = []
 
