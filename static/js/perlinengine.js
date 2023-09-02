@@ -1,3 +1,25 @@
+// Centaur Drawings || 2023.
+
+// #Authors:
+//     Uroš Krčadinac | krcadinac.com 
+//     Andrej Alfirevic | xladn0.rf.gd 
+//     Zeljko Petrovic | instagram@just.blue.dot
+
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see https://www.gnu.org/licenses.
+
+
+
 // let lines = [];
 let startOfPictos = 3400;
 let endOfPictos = 4100; 
@@ -14,7 +36,7 @@ let startIndex = 0;
 let versionCounter = 1;
 
 
-const localhost = "http://127.0.0.1:5000/static/media/drawings/";
+const localhost = "http://127.0.0.1:5000/static/media/Databases/drawings/";
 
 function preload() {
     nOfPictos = endOfPictos - startOfPictos;

@@ -1,3 +1,26 @@
+<!-- 
+    
+Centaur Drawings || 2023.
+
+#Authors:
+    Uroš Krčadinac | krcadinac.com 
+    Andrej Alfirevic | xladn0.rf.gd 
+    Zeljko Petrovic | instagram@just.blue.dot
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see https://www.gnu.org/licenses.
+
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,27 +31,53 @@
     <title>Centaur Drawings Playground</title>
 </head>
 <style>
+    html, body {
+        margin-left: 20px;
+        margin-top:5px;
+        background-color: #DEDEDE;
+    }
     .one{
-        width:100px;
+        width:50%;
         margin-left: 5px;
         margin-top: 5px;
     }
     a{
-        font-size: 14px;
+        font-size: 7.5em;
         font-family: monospace;
+        text-decoration: none;
+        transition:0.3s;
+        color:#212121;
     }
+    a:hover{
+        text-decoration:line-through;
+        color:#ffd900;
+    }
+    footer{
+        margin-top: 7.5em;
+        text-align: center;
+        align-items: center;
+    }
+    @media only screen and (max-width: 1200px) {
+        .one{
+        width:50%;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+        a{
+        font-size: 4em;
+  }
+}
 </style>
 <body>
     <div class="one">
-        <a href="./morphing/">morphing/</a>
         <a href="./drawing-panel/">drawing_panel/</a>
-        <a href="./nearest-neighbor/">nearest_neighbor/</a>
         <a href="./variation-maker/">variation_maker/</a>
+        <a href="./nearest-neighbor/">nearest_neighbor/</a>
         <a href="./pictomatrix/">pictomatrix/</a>
         <a href="./pictomatrix-wide/">pictomatrix_wide/</a>
         <a href="./pictomatrix-nn/">pictomatrix_nn/</a>
-        <a href="./pictomatrix-NEURO/">pictomatrix_NEURO</a>
-        <a href="./webgen/">webgen/</a>
+        <a href="./flow-field/">flow_field/</a>
     </div>
+    <footer> Centaur Drawings 2023</footer>
 </body>
 </html>
